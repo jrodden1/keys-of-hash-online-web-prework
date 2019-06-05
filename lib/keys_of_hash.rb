@@ -1,8 +1,8 @@
 require 'pry'
 
 class Hash
+  outputArr = []
   def keys_of(*arguments)
-    outputArr = []
     self.each do |key, value|
       arguments.each do |argument|
         if argument == value
@@ -11,6 +11,7 @@ class Hash
       end
     end
     outputArr
-    binding.pry 
+    binding.pry
   end
+  outputArr
 end
